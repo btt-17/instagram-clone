@@ -27,6 +27,7 @@ export default {
             const resStatus = res.data.data
             if (resStatus === "successfully") { 
                 this.status = ''
+                this.$router.push('/home')
             }
 
             if (resStatus !== "successfully") { 
