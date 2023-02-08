@@ -1,11 +1,13 @@
 <script lang="ts">
 import StatusCard from './StatusCard.vue';
 import Post from './Post.vue';
+import ProfileCard from './ProfileCard.vue';
 
 export default {
     components: {
         StatusCard,
         Post,
+        ProfileCard,
     },
 
     data() {
@@ -26,7 +28,14 @@ export default {
                 {avatar: "img/cover 4.png", username: "modern_web_channel", likesNum:"1021", time:"2 minutes ago", content: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur tenetur veritatis placeat, molestiae impedit aut provident eum quo natus molestias?"},
                 {avatar: "img/cover 5.png", username: "modern_web_channel", likesNum:"1021", time:"2 minutes ago", content: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur tenetur veritatis placeat, molestiae impedit aut provident eum quo natus molestias?"},
                 {avatar: "img/cover 6.png", username: "modern_web_channel", likesNum:"1021", time:"2 minutes ago", content: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur tenetur veritatis placeat, molestiae impedit aut provident eum quo natus molestias?"},
-        ]
+            ],
+            profiles : [
+                {avatar: "img/profile-pic.png",  username: "modern_web_channel", subText: "kunaal kumar", buttonType:'switch',mainAcc:true },
+                {avatar: "img/cover 9.png",  username: "modern_web_channel", subText: "followed bu user", buttonType:'follow' ,mainAcc:false},
+                {avatar: "img/cover 10.png",  username: "modern_web_channel", subText: "followed bu user" , buttonType:'follow',mainAcc:false},
+                {avatar: "img/cover 11.png",  username: "modern_web_channel", subText: "followed bu user" , buttonType:'follow',mainAcc:false},
+                {avatar: "img/cover 12.png",  username: "modern_web_channel", subText: "followed bu user" , buttonType:'follow',mainAcc:false},
+            ]
         }
     }
 }
@@ -47,6 +56,12 @@ export default {
                 />
             </div>
         </div> 
+        <div class="right-col">
+            <div v-for="profile in profiles">
+                <ProfileCard :username="profile.username" :avatar="profile.avatar" :subText="profile.subText" :buttonType="profile.buttonType"/>
+                <p v-if="profile.mainAcc" class="suggestion-text">Suggestions for you</p>
+            </div>
+        </div>
     </div>
 </section>
 </template>
