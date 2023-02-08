@@ -1,0 +1,57 @@
+<script lang="ts">
+import StatusCard from './StatusCard.vue';
+import Post from './Post.vue';
+
+export default {
+    components: {
+        StatusCard,
+        Post,
+    },
+
+    data() {
+        return {
+            // dummy data
+            status_card: [
+                {avatar: "img/cover 1.png", username: "user_name_1"},
+                {avatar: "img/cover 2.png", username: "user_name_2"},
+                {avatar: "img/cover 3.png", username: "user_name_3"},
+                {avatar: "img/cover 4.png", username: "user_name_4"},
+                {avatar: "img/cover 5.png", username: "user_name_5"},
+                {avatar: "img/cover 6.png", username: "user_name_6"},
+            ],
+            posts: [
+                {avatar: "img/cover 1.png", username: "modern_web_channel", likesNum:"1021", time:"2 minutes ago", content: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur tenetur veritatis placeat, molestiae impedit aut provident eum quo natus molestias?"},
+                {avatar: "img/cover 2.png", username: "modern_web_channel", likesNum:"1021", time:"2 minutes ago", content: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur tenetur veritatis placeat, molestiae impedit aut provident eum quo natus molestias?"},
+                {avatar: "img/cover 3.png", username: "modern_web_channel", likesNum:"1021", time:"2 minutes ago", content: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur tenetur veritatis placeat, molestiae impedit aut provident eum quo natus molestias?"},
+                {avatar: "img/cover 4.png", username: "modern_web_channel", likesNum:"1021", time:"2 minutes ago", content: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur tenetur veritatis placeat, molestiae impedit aut provident eum quo natus molestias?"},
+                {avatar: "img/cover 5.png", username: "modern_web_channel", likesNum:"1021", time:"2 minutes ago", content: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur tenetur veritatis placeat, molestiae impedit aut provident eum quo natus molestias?"},
+                {avatar: "img/cover 6.png", username: "modern_web_channel", likesNum:"1021", time:"2 minutes ago", content: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur tenetur veritatis placeat, molestiae impedit aut provident eum quo natus molestias?"},
+        ]
+        }
+    }
+}
+</script>
+
+<template>
+<section class="main">
+    <div class="wrapper">
+        <div class="left-col">
+            <div class="status-wrapper">
+                <div v-for="status in status_card">
+                    <StatusCard :avatar="status.avatar" :username="status.username" />
+                </div>      
+            </div>
+            <div v-for="postInfo in posts">
+                <Post :username="postInfo.username" :avatar="postInfo.avatar" :likesNum="postInfo.likesNum" :time="postInfo.time"
+                    :content="postInfo.content"
+                />
+            </div>
+        </div> 
+    </div>
+</section>
+</template>
+
+<style scoped>
+@import '../assets/components.css';
+
+</style>

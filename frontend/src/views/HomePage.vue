@@ -1,18 +1,16 @@
 <script lang="ts">
 import Nav from '../components/Nav.vue'
+import Status from '../components/Status.vue'
 export default {
     components: {
-        Nav
+        Nav,
+        Status,
     },
 }
 
 </script>
 
 <template>
-<div class="relative">
     <Nav />
-    <h1>Home page!</h1>
-</div>
-   
-   
+    <Status />
 </template>
