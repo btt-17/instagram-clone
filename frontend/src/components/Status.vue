@@ -22,19 +22,19 @@ export default {
                 {avatar: "img/cover 6.png", username: "user_name_6"},
             ],
             posts: [
-                {avatar: "img/cover 1.png", username: "modern_web_channel", likesNum:"1021", time:"2 minutes ago", content: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur tenetur veritatis placeat, molestiae impedit aut provident eum quo natus molestias?"},
-                {avatar: "img/cover 2.png", username: "modern_web_channel", likesNum:"1021", time:"2 minutes ago", content: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur tenetur veritatis placeat, molestiae impedit aut provident eum quo natus molestias?"},
-                {avatar: "img/cover 3.png", username: "modern_web_channel", likesNum:"1021", time:"2 minutes ago", content: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur tenetur veritatis placeat, molestiae impedit aut provident eum quo natus molestias?"},
-                {avatar: "img/cover 4.png", username: "modern_web_channel", likesNum:"1021", time:"2 minutes ago", content: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur tenetur veritatis placeat, molestiae impedit aut provident eum quo natus molestias?"},
-                {avatar: "img/cover 5.png", username: "modern_web_channel", likesNum:"1021", time:"2 minutes ago", content: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur tenetur veritatis placeat, molestiae impedit aut provident eum quo natus molestias?"},
-                {avatar: "img/cover 6.png", username: "modern_web_channel", likesNum:"1021", time:"2 minutes ago", content: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur tenetur veritatis placeat, molestiae impedit aut provident eum quo natus molestias?"},
+                {avatar: "img/cover 1.png", username: "instagram_clone", likesNum:"1021", time:"2 minutes ago", content: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur tenetur veritatis placeat, molestiae impedit aut provident eum quo natus molestias?"},
+                {avatar: "img/cover 2.png", username: "instagram_clone", likesNum:"1021", time:"2 minutes ago", content: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur tenetur veritatis placeat, molestiae impedit aut provident eum quo natus molestias?"},
+                {avatar: "img/cover 3.png", username: "instagram_clone", likesNum:"1021", time:"2 minutes ago", content: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur tenetur veritatis placeat, molestiae impedit aut provident eum quo natus molestias?"},
+                {avatar: "img/cover 4.png", username: "instagram_clone", likesNum:"1021", time:"2 minutes ago", content: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur tenetur veritatis placeat, molestiae impedit aut provident eum quo natus molestias?"},
+                {avatar: "img/cover 5.png", username: "instagram_clone", likesNum:"1021", time:"2 minutes ago", content: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur tenetur veritatis placeat, molestiae impedit aut provident eum quo natus molestias?"},
+                {avatar: "img/cover 6.png", username: "instagram_clone", likesNum:"1021", time:"2 minutes ago", content: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur tenetur veritatis placeat, molestiae impedit aut provident eum quo natus molestias?"},
             ],
             profiles : [
-                {avatar: "img/profile-pic.png",  username: "modern_web_channel", subText: "kunaal kumar", buttonType:'switch',mainAcc:true },
-                {avatar: "img/cover 9.png",  username: "modern_web_channel", subText: "followed bu user", buttonType:'follow' ,mainAcc:false},
-                {avatar: "img/cover 10.png",  username: "modern_web_channel", subText: "followed bu user" , buttonType:'follow',mainAcc:false},
-                {avatar: "img/cover 11.png",  username: "modern_web_channel", subText: "followed bu user" , buttonType:'follow',mainAcc:false},
-                {avatar: "img/cover 12.png",  username: "modern_web_channel", subText: "followed bu user" , buttonType:'follow',mainAcc:false},
+                {avatar: "img/profile-pic.png",  username: "instagram_clone", subText: "kunaal kumar", buttonType:'switch',mainAcc:true },
+                {avatar: "img/cover 9.png",  username: "instagram_clone", subText: "followed bu user", buttonType:'follow' ,mainAcc:false},
+                {avatar: "img/cover 10.png",  username: "instagram_clone", subText: "followed bu user" , buttonType:'follow',mainAcc:false},
+                {avatar: "img/cover 11.png",  username: "instagram_clone", subText: "followed bu user" , buttonType:'follow',mainAcc:false},
+                {avatar: "img/cover 12.png",  username: "instagram_clone", subText: "followed bu user" , buttonType:'follow',mainAcc:false},
             ]
         }
     }

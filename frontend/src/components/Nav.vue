@@ -16,9 +16,8 @@ export default {
             <img src="img/add.PNG" class="icon" alt="">
             <img src="img/explore.PNG" class="icon" alt="">
             <img src="img/like.PNG" class="icon" alt="">
-            <!-- <div class="icon "> -->
-            <img src="img/profile-pic.png" class="user-profile" alt="">
-            <!-- </div> -->
+            <img src="img/profile-pic.png" class="icon user-profile" alt="">
+            <img src="bars-solid.svg" class="icon" alt="">
         </div>
     </div>
 </nav>
@@ -26,5 +25,7 @@ export default {
 
 <style scoped>
 @import '../assets/components.css';
-
+.icon:hover {
+    height: 120%;
+}
 </style>
