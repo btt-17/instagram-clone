@@ -1,6 +1,11 @@
 <script lang="ts">
+
+
+
 export default {
 //https://dev.to/themodernweb/how-to-make-instagram-clone-using-html-css-fully-responsive-49co
+
+
     data() {
         return {
             showSubMenu: false,
@@ -50,7 +55,8 @@ export default {
             <li class="has-menu" >
                 <img @click="showMenu" src="bars-solid.svg"  class="menu-image" alt=""> 
                 <ul v-if="showSubMenu" class="sub-menu">
-                    <li><p >Settings</p></li>
+                    
+                    <li><p  class="setting">Settings <font-awesome-icon class="setting_icon" icon="fa-solid fa-gear" /></p>  </li>
                     <li><p >Saved</p></li>
                     <li><p >Switch appearance</p></li>
                     <li><p >Your activity</p></li>
@@ -126,6 +132,8 @@ export default {
     margin-left: .5rem;
 }
 
-
+.setting_icon {
+    margin-left: 5.98rem;
+}
 
 </style>
