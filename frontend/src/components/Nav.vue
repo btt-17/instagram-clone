@@ -90,7 +90,7 @@ export default {
 /* メインメニュー */
 .main-menu {
     height:100%;
-    right:3%;
+    right:6%;
     display: flex;
     justify-content: center;
     position: absolute;   
@@ -112,8 +112,8 @@ export default {
 /* サブメニュー */
 .sub-menu {
     position: absolute;
-    top: 2em;
-    right: .1rem;
+    top: 2.2rem;
+    left: -6rem;
     background: #666;
 }
 .sub-menu p {
