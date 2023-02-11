@@ -56,13 +56,13 @@ export default {
                 <img @click="showMenu" src="bars-solid.svg"  class="menu-image" alt=""> 
                 <ul v-if="showSubMenu" class="sub-menu">
                     
-                    <li><p  class="setting">Settings <font-awesome-icon class="setting_icon" icon="fa-solid fa-gear" /></p>  </li>
-                    <li><p >Saved</p></li>
-                    <li><p >Switch appearance</p></li>
-                    <li><p >Your activity</p></li>
-                    <li><p >Report a problem</p></li>
-                    <li><p >Switch accounts</p></li>
-                    <li @click="LogOut"><p >Log out</p></li>
+                    <li class="sub-menu-item"><p  class="setting">Settings <font-awesome-icon class="setting-icon" icon="fa-solid fa-gear" /></p>  </li>
+                    <li class="sub-menu-item"><p >Saved <font-awesome-icon class="save-icon" icon="fa-solid fa-bookmark" /></p></li>
+                    <li class="sub-menu-item"><p >Switch appearance <font-awesome-icon class="appearance-icon" icon="fa-solid fa-moon" /></p></li>
+                    <li class="sub-menu-item"><p >Your activity <font-awesome-icon class="activity-icon" icon="fa-solid fa-clock-rotate-left" /></p></li>
+                    <li class="sub-menu-item"><p >Report a problem <font-awesome-icon class="report-icon" icon="fa-solid fa-circle-exclamation" /></p></li>
+                    <li class="sub-menu-item"><p >Switch accounts</p></li>
+                    <li class="sub-menu-item" @click="LogOut"><p >Log out</p></li>
                 </ul>
             </li>
         </ul>    
@@ -132,8 +132,29 @@ export default {
     margin-left: .5rem;
 }
 
-.setting_icon {
+
+.sub-menu-item:hover {
+    background: #a8a6a6;
+}
+
+.setting-icon {
     margin-left: 5.98rem;
+}
+
+.save-icon {
+    margin-left: 7rem;
+}
+
+.appearance-icon{
+    margin-left: 1.2rem;
+}
+
+.activity-icon {
+    margin-left: 4.1rem;
+}
+
+.report-icon {
+    margin-left: 1.85rem;
 }
 
 </style>
