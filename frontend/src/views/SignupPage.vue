@@ -89,7 +89,7 @@ export default {
                 <div class="bg-white w-5/6 md:w-3/4 lg:w-2/3 xl:w-[500px] 2xl:w-[550px] mt-8 mx-auto px-16 py-8 rounded-lg shadow-2xl">
 
                     <h2 class="text-center text-2xl font-bold tracking-wide text-gray-800">Sign Up</h2>
-                    <p class="text-center text-sm text-gray-600 mt-2">Already have an account? <a href="#" class="text-blue-600 hover:text-blue-700 hover:underline" title="Sign In">Sign in here</a></p>
+                    <p class="text-center text-sm text-gray-600 mt-2">Already have an account? <a @click="moveToLogin()" class="text-blue-600 hover:text-blue-700 hover:underline" title="Sign In">Sign in here</a></p>
 
                     <form @submit.prevent="handleSignup" class="my-8 text-sm">
                         <div class="flex flex-col my-4">

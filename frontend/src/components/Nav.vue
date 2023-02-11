@@ -19,6 +19,14 @@ export default {
 
         LogOut() {
             this.$router.push('/')
+        },
+
+        goToEdit() {
+            this.$router.push('/home/profile')
+        },
+
+        backToHome() {
+            this.$router.push('/home')
         }
     },
 }
@@ -27,36 +35,36 @@ export default {
 <template>
 <nav class="navbar">
     <div class="nav-wrapper">
-        <img src="img/logo.PNG" class="brand-img" alt="">
+        <img src="/img/logo.PNG" class="brand-img" @click="backToHome" alt="">
         <input type="text" class="search-box" placeholder="search">
         <ul class="nav-items">
             <li class="icon" >
-                <img src="img/home.PNG" class="icon-image" alt="">
+                <img src="/img/home.PNG" class="icon-image" alt="">
             </li>
             <li class="icon" >
-                <img src="img/messenger.PNG" class="icon-image" alt="">
+                <img src="/img/messenger.PNG" class="icon-image" alt="">
                 
             </li>
             <li class="icon" >
-                <img src="img/add.PNG" class="icon-image"  alt="">
+                <img src="/img/add.PNG" class="icon-image"  alt="">
             </li>
             <li class="icon" >
-                <img src="img/explore.PNG" class="icon-image" alt="">
+                <img src="/img/explore.PNG" class="icon-image" alt="">
             </li>
             <li class="icon" >
-                <img src="img/like.PNG" class="icon-image" alt="">
+                <img src="/img/like.PNG" class="icon-image" alt="">
             </li>
             <li class="icon" >
-                <img src="img/profile-pic.png" class="user-profile" alt="">
+                <img src="/img/profile-pic.png" class="user-profile" alt="">
             </li>     
         </ul>  
         
         <ul  class="main-menu">
             <li class="has-menu" >
-                <img @click="showMenu" src="bars-solid.svg"  class="menu-image" alt=""> 
+                <img @click="showMenu" src="/bars-solid.svg"  class="menu-image" alt=""> 
                 <ul v-if="showSubMenu" class="sub-menu">
                     
-                    <li class="sub-menu-item"><p  class="setting">Settings <font-awesome-icon class="setting-icon" icon="fa-solid fa-gear" /></p>  </li>
+                    <li class="sub-menu-item" @click="goToEdit"><p  class="setting">Settings <font-awesome-icon class="setting-icon" icon="fa-solid fa-gear" /></p>  </li>
                     <li class="sub-menu-item"><p >Saved <font-awesome-icon class="save-icon" icon="fa-solid fa-bookmark" /></p></li>
                     <li class="sub-menu-item"><p >Switch appearance <font-awesome-icon class="appearance-icon" icon="fa-solid fa-moon" /></p></li>
                     <li class="sub-menu-item"><p >Your activity <font-awesome-icon class="activity-icon" icon="fa-solid fa-clock-rotate-left" /></p></li>
@@ -74,6 +82,10 @@ export default {
 
 <style scoped>
 @import '../assets/components.css';
+
+.brand-img {
+    cursor:pointer;
+}
 .icon:hover {
     height: 120%;
 }
