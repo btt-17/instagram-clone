@@ -4,23 +4,23 @@
 
 export default {
 //https://dev.to/themodernweb/how-to-make-instagram-clone-using-html-css-fully-responsive-49co
-
-
+    props:['showSubMenu'],
     data() {
         return {
-            showSubMenu: false,
+            _showSubMenu: this.showSubMenu,
         }
     },
 
     methods: {
         showMenu() {
-            this.showSubMenu = !this.showSubMenu
+            this._showSubMenu = !this.showSubMenu
+            this.$emit('changeShowState', this._showSubMenu)
         },
 
         LogOut() {
             this.$router.push('/')
         }
-    }
+    },
 }
 </script>
 
