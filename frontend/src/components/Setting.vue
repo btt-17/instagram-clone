@@ -50,11 +50,11 @@ export default {
         <div class="w-3/4 h-1/2 border grid grid-cols-4">
         <div class="border border-black " >
             <div v-for="item in selectOptions" >
-                <div @click="changeSelect(item.option)" v-if="!item.value" class="p-2 hover:bg-gray-300">{{ item.name }}</div>     
-                <div v-if="item.value" class="selected p-2">{{ item.name }}</div>     
+                <div @click="changeSelect(item.option)" v-if="!item.value" class="p-2 cursor-pointer hover:bg-gray-300">{{ item.name }}</div>     
+                <div v-if="item.value" class="selected cursor-pointer p-2">{{ item.name }}</div>     
             </div>
            
-           <div class="p-2 text-sm text-blue-600 font-normal">Switch to professional account</div> 
+           <div class="p-2 text-sm cursor-pointer text-blue-600 font-normal">Switch to professional account</div> 
         </div>
         <div class="border border-black col-span-3" >
             flex-2
