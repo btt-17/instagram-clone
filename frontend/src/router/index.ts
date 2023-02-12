@@ -3,8 +3,9 @@ import LoginPage from '../views/LoginPage.vue'
 import SignupPage from '../views/SignupPage.vue'
 import HomePage from '../views/HomePage.vue'
 import Status from '../components/Status.vue'
-import EditProfile from '../components/EditProfile.vue'
-import PageNotFound from '../views/PageNotFound.vue'
+import Setting from '../components/Setting.vue'
+
+
 const router = createRouter({
     history: createWebHistory(import.meta.env.BASE_URL),
     routes: [
@@ -28,8 +29,8 @@ const router = createRouter({
                     component: Status,
                 },
                 {
-                    path: 'profile',
-                    component: EditProfile,
+                    path: 'setting',
+                    component: Setting,
                 },
             ]
         },

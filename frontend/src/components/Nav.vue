@@ -22,7 +22,7 @@ export default {
         },
 
         goToEdit() {
-            this.$router.push('/home/profile')
+            this.$router.push('/home/setting')
         },
 
         backToHome() {

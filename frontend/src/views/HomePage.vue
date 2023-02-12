@@ -1,13 +1,13 @@
 <script lang="ts">
 import Nav from '../components/Nav.vue'
 import Status from '../components/Status.vue'
-import EditProfile from '../components/EditProfile.vue'
+import Setting from '../components/Setting.vue'
 
 export default {
     components: {
         Nav,
         Status,
-        EditProfile,
+        Setting,
     },
     data() {
         return {
